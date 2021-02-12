@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grid>
+  <config name="GridConfig">
+    <hub url="http://10.215.200.176:4444/wd/hub"/>
+    <nodes>
+      <node browser="RM_CHROME" url="http://10.215.200.176:5555/wd/hub"/>
+      <node browser="RM_IE" url="http://10.215.200.176:7655/wd/hub"/>                  
+      <node browser="RM_EDGE" url="http://10.215.200.176:7657/wd/hub"/>
+      <node browser="RM_FIREFOX" url="http://10.215.200.176:7658/wd/hub"/>
+    </nodes>
+  </config>
+</grid>
+<!--
+  <node browser="RM_EDGE" url="http://10.215.200.176:7657/wd/hub"/>
+  <node browser="RM_EDGE" url="http://10.188.204.129:7657/wd/hub"/>
+  
+  
+  Reference Notes: For Node Config
+  
+  IP 10.188.204.116 - Dedicated for Chrome Browser
+  IP 10.188.204.129 - Dedicated for Edge Browser
+  
+  Any changes in IP done here should be maintained against port in Grid_StartUp.bat (Under Same Folder Root)   
+ -->
